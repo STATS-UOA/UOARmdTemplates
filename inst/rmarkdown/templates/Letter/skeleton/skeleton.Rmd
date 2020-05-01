@@ -1,0 +1,18 @@
+---
+from: Pierre Curie
+fromqualifications: Nobel Prize, PhD
+fromtitle: Professor
+fromWWW: curie.com
+fromemail: Pierre.Curie@auckland.ac.nz
+fromphone: +64 3 9905 5555
+fromsignature: sigfile.png
+toname: Jacques Curie
+toaddress: University of Montpellier
+opening: Dear Jacques
+closing: Best wishes
+spacing: 1.4
+output: UOARmdTemplates::letter
+---
+
+I am writing to ask you to \dots
+
