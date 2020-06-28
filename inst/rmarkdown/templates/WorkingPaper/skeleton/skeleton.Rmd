@@ -26,24 +26,21 @@ output:
       in_header: preamble.tex
     number_sections: yes
     citation_package: biblatex
+    dev: "pdf"
 ---
 
-```{r setup, include = FALSE}
-knitr::opts_chunk$set(cache = TRUE,
-  echo = FALSE, messages = FALSE, warning = FALSE)
-library(ggplot2)
+```{r setup, echo = FALSE, cache = FALSE, include = FALSE}
+options("knitr.graphics.auto_pdf" = TRUE)
+library(knitr)
+opts_chunk$set(
+  echo = FALSE, warning = FALSE, message = FALSE, comment = "#>",
+  fig.path = 'figure/', fig.align = 'center', fig.show = 'hold',
+  cache = TRUE, cache.path = 'cache/',
+  out.width = ifelse(is_html_output(), "100%", "\\textwidth")
+)
+knitr::opts_knit$set(root.dir = here::here())
 ```
-
 
 # Introduction
 
 In a famous paper, @BC64 introduced a family of transformations \dots
-
-```{r histogram, fig.cap="Nice histogram", message=FALSE, warning=FALSE}
-qplot(exp(rnorm(200)))
-```
-
-Consider the logNormal data plotted in Figure \ref{fig:histogram}.
-
-$$s^2 = \sum_{i=1}^n (x_i-\bar{x})^2$$
-

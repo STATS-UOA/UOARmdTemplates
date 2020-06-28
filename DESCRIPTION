@@ -12,6 +12,7 @@ Description: This package provides Rmarkdown templates for
 License: GPL-3
 Imports:
     bookdown,
+    here,
     tinytex
 ByteCompile: true
 Encoding: UTF-8
