@@ -38,3 +38,13 @@ memo <- function(...) {
                           package = "UOARmdTemplates")
   bookdown::pdf_document2(..., citation_package = 'biblatex', template = template)
 }
+
+#' @rdname letter
+#' @export
+exam <- function(...) {
+  template <- system.file("rmarkdown/templates/Exam/resources/examtemplate.tex",
+                          package="UOARmdTemplates")
+  bookdown::pdf_document2(...,
+                          template = template
+  )
+}

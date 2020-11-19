@@ -8,6 +8,7 @@ It contains
 * letter template
 * consulting report template
 * memo template
+* exam paper
 
 ## Installation
 

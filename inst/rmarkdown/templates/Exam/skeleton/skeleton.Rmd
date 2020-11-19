@@ -1,0 +1,48 @@
+---
+unitcode: STATS XXX
+title: "Advanced Bean Counting"
+city: true
+grafton: false
+other: specify
+duration: 2 hours
+semester: Semester One 2017
+instruction: |
+  1. Attempt ALL questions
+output: 
+  UOARmdTemplates::exam:
+    fig_caption: true
+    fig_height: 3.7
+    fig_width: 6
+    highlight: tango
+    includes:
+      in_header: preamble.tex
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, cache = TRUE)
+```
+
+**The exam contains FIVE questions. ALL questions must be answered. The exam is worth 100 marks in total.**
+
+\vspace*{2cm}
+
+
+# 
+
+Show that the following expression is the MLE for the variance assuming a Gaussian distribution.
+$$ \hat{\sigma}^2 = \frac{1}{n} \sum_{i=1}^n (x_i-\bar{x})^2$$
+
+\marks{20}
+
+# 
+
+Second question.
+
+(a)
+
+    Part a. \marks{4}
+
+(b) More stuff. \marks{10}
+
+(c) Final part. \marks{6}

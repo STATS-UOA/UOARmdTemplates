@@ -5,6 +5,7 @@
 \alias{workingpaper}
 \alias{report}
 \alias{memo}
+\alias{exam}
 \title{Output formats for the University of Auckland documents}
 \usage{
 letter(...)
@@ -14,14 +15,16 @@ workingpaper(...)
 report(...)
 
 memo(...)
+
+exam(...)
 }
 \arguments{
-\item{...}{Arguments passed to \code{\link[bookdown:pdf_document2]{bookdown::pdf_document2()}}.}
+\item{...}{Arguments passed to \code{\link[bookdown:html_document2]{bookdown::pdf_document2()}}.}
 }
 \value{
 An R Markdown output format object.
 }
 \description{
-Each function is a wrapper for \code{\link[bookdown:pdf_document2]{bookdown::pdf_document2()}} to
+Each function is a wrapper for \code{\link[bookdown:html_document2]{bookdown::pdf_document2()}} to
 produce documents in UoA Stats style.
 }
