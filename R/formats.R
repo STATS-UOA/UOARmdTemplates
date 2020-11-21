@@ -11,7 +11,7 @@
 letter <- function(...) {
   template <- system.file("rmarkdown/templates/Letter/resources/letter.tex",
                           package = "UOARmdTemplates")
-   bookdown::pdf_document2(..., template = template)
+  bookdown::pdf_document2(..., template = template)
 }
 
 #' @rdname letter
@@ -44,7 +44,5 @@ memo <- function(...) {
 exam <- function(...) {
   template <- system.file("rmarkdown/templates/Exam/resources/examtemplate.tex",
                           package="UOARmdTemplates")
-  bookdown::pdf_document2(...,
-                          template = template
-  )
+  bookdown::pdf_document2(..., template = template)
 }
